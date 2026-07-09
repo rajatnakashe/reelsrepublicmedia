@@ -60,4 +60,38 @@ behavior:"smooth"
 });
  
 }
+const menuBtn=document.getElementById("menuBtn");
+const navLinks=document.getElementById("navLinks");
+
+menuBtn.addEventListener("click",()=>{
+
+menuBtn.classList.toggle("active");
+
+navLinks.classList.toggle("active");
+
+});
+// Scroll Reveal
  
+const reveals = document.querySelectorAll(".reveal");
+ 
+function revealElements(){
+ 
+reveals.forEach((element)=>{
+ 
+const windowHeight = window.innerHeight;
+ 
+const top = element.getBoundingClientRect().top;
+ 
+if(top < windowHeight - 100){
+ 
+element.classList.add("active");
+ 
+}
+ 
+});
+ 
+}
+ 
+window.addEventListener("scroll", revealElements);
+ 
+revealElements();
