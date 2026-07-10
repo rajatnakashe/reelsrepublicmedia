@@ -7,17 +7,33 @@
 <title>Reels Republic Media</title>
  
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
  
 <link rel="stylesheet" href="style.css">
  
 </head>
  
 <body>
+    
  
 <header class="hero">
+    <!-- Video Hero -->
+
+<section class="hero">
+    <video autoplay muted loop playsinline>
+        <source src="videos/hero.mp4" type="video/mp4">
+    </video>
  
+    <div class="overlay"></div>
+ 
+    <div class="hero-content">
+        ...
+    </div>
+</section>
 <nav class="navbar">
+    
  
     <img src="images/logo.png" class="logo">
  
@@ -44,6 +60,7 @@
     </div>
  
 </nav>
+
 
  
 <div class="hero-content">
@@ -73,9 +90,10 @@
  
     </div>
  
-</div>>
+</div>
  
 </header>
+
 <!-- TRUSTED BRANDS -->
  
 <section class="trusted">
@@ -110,7 +128,9 @@
 <section class="about">
  
 <div class="about-left">
- 
+
+<img src="images/logo.png">
+
 <img src="images/about.jpg">
  
 </div>
@@ -173,7 +193,7 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
 </section>
 
 <!-- SERVICES -->
- <section class="services" id="services">
+ <section class="otherservices" id="otherservices">
  
     <div class="heading">
         <p>OUR SERVICES</p>
@@ -232,13 +252,13 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
     </div>
  
 </section>
- 
-<!--<section class="services" id="services">
+
+<section class="services" id="services">
  
     <div class="heading">
-        <p>WHAT WE DO</p>
-        <h2>Our Creative Solutions</h2>
-        <span>Helping brands grow through creativity and digital innovation.</span>
+        <p>OTHER SERVICES</p>
+        <h2>WHAT ELSE WE DO</h2>
+        <span>Helping you all with the Digital Creativity</span>
     </div>
  
     <div class="service-list">
@@ -246,29 +266,13 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
         <div class="service-item">
             <span class="number">01</span>
             <div class="service-content">
-                <h3>üé¨ Reels & Content Creation</h3>
-                <p>Cinematic Instagram reels, business promotions, weddings, events and product videos.</p>
+                <h3>üì± Digital Invites </h3>
+                <p>Creative Digital Invities for your big day.</p>
             </div>
         </div>
  
         <div class="service-item">
             <span class="number">02</span>
-            <div class="service-content">
-                <h3>üì± Social Media Management</h3>
-                <p>Creative posts, reels, strategy and complete Instagram & Facebook management.</p>
-            </div>
-        </div>
- 
-        <div class="service-item">
-            <span class="number">03</span>
-            <div class="service-content">
-                <h3>üåê Website Development</h3>
-                <p>Modern responsive websites that convert visitors into customers.</p>
-            </div>
-        </div>
- 
-        <div class="service-item">
-            <span class="number">04</span>
             <div class="service-content">
                 <h3>üì∏ Product Photography</h3>
                 <p>Professional product photography for brands and businesses.</p>
@@ -276,16 +280,16 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
         </div>
  
         <div class="service-item">
-            <span class="number">05</span>
+            <span class="number">03</span>
             <div class="service-content">
-                <h3>üöÄ Digital Branding</h3>
-                <p>Creative branding, marketing campaigns and business identity.</p>
+                <h3>üöÄ Business Registration</h3>
+                <p>MSME, GST, TRADEMARK etc</p>
             </div>
         </div>
  
     </div>
  
-</section>-->
+</section>
 
 <!-- PORTFOLIO -->
  
@@ -318,7 +322,7 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
             <img src="images/cafe.jpg" alt="">
             <div class="portfolio-overlay">
                 <span>Cafe Promotion</span>
-                <h3>Cafe Bhandara</h3>
+                <h3>The Cafe Bhandara</h3>
                 <a href="#">View Project ‚Üí</a>
             </div>
         </div>
@@ -333,10 +337,10 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
         </div>
  
         <div class="portfolio-card">
-            <img src="images/shop.jpg" alt="">
+            <img src="images/baby.jpg" alt="">
             <div class="portfolio-overlay">
-                <span>Business Launch</span>
-                <h3>Shop Opening</h3>
+                <span>Baby Shoot</span>
+                <h3>Baby Shoot</h3>
                 <a href="#">View Project ‚Üí</a>
             </div>
         </div>
@@ -349,6 +353,15 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
  
 <h1>Our Videos</h1>
  
+<div class="video-grid">
+ 
+<div class="video-card">
+<video controls poster="images/thumb1.jpg">
+<source src="videos/cardelivery.mp4" type="video/mp4">
+</video>
+<h3>Car Delivery</h3>
+</div>
+ 
 <div class="video-card">
 <video controls poster="images/thumb2.jpg">
 <source src="videos/bikedelivery.mp4" type="video/mp4">
@@ -356,6 +369,19 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
 <h3>Bike Delivery</h3>
 </div>
 
+<!--<div class="video-card">
+<video controls poster="images/thumb2.jpg">
+<source src="videos/vatprunima.mp4" type="video/mp4">
+</video>
+<h3>Vatpurnima</h3>
+</div>-->
+
+<!--<div class="video-card">
+<video controls poster="images/thumb2.jpg">
+<source src="videos/political.mp4" type="video/mp4">
+</video>
+<h3>Political</h3>
+</div>-->
 
 <div class="video-card">
 <video controls poster="images/thumb2.jpg">
@@ -371,6 +397,26 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
 <h3>Construction</h3>
 </div>
 
+<!--<div class="video-card">
+<video controls poster="images/thumb2.jpg">
+<source src="videos/maternity.mp4" type="video/mp4">
+</video>
+<h3>Maternity</h3>
+</div>
+
+<div class="video-card">
+<video controls poster="images/thumb2.jpg">
+<source src="videos/annprashan.mp4" type="video/mp4">
+</video>
+<h3>Annprashan</h3>
+</div>
+
+<div class="video-card">
+<video controls poster="images/thumb2.jpg">
+<source src="videos/appa.mp4" type="video/mp4">
+</video>
+<h3>Car</h3>
+</div>-->
  
 </div>
  
@@ -401,8 +447,6 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
     </div>
  
 </section>
- 
- 
 <!-- TESTIMONIALS -->
  
 <section class="testimonials">
@@ -484,7 +528,6 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
 </div>
  
 </section> 
-
 <!-- CONTACT -->
  
 <section class="contact" id="contact">
@@ -525,7 +568,6 @@ Whether it's a caf√©, restaurant, bakery, car showroom, event or local business‚
     </div>
  
 </section>
- 
  
 <footer>
  
